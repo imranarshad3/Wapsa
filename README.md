@@ -7,7 +7,7 @@ A minimal fashion storefront built with **Next.js 14** and **GSAP**.
 - **Accessory** — grid of silver pieces with a detail side panel.
 - **Journal** and **About** pages, live search, menu drawer, and a bag that remembers its contents in the browser.
 
-Brand, products and garment drawings are sample content.
+Brand and products are sample content. Product photos are AI-generated studio shots in `public/photos/`; replace a file with the same name to swap in your own photo.
 
 ## Run locally
 
@@ -32,3 +32,4 @@ The `out` folder can be deployed to Vercel, Netlify, GitHub Pages or any static 
 | `app/globals.css` | All styles |
 | `lib/markup.js` | Page markup (header, views, drawers, footer) |
 | `lib/site.js` | Product data, rendering, routing, GSAP animation |
+| `public/photos/` | Product photos, one per product id |
