@@ -41,8 +41,8 @@ dt{color:var(--mute)}
 .link{font-size:14px;letter-spacing:.08em;border-bottom:1px solid var(--ink);min-height:44px}
 .arrows{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--mute)}
 .arrows button{width:44px;height:44px;font-size:22px;color:var(--ink)}
-.strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px}
-.strip button{flex:none;width:56px;height:72px;background:var(--panel);border:1px solid transparent;scroll-snap-align:start;opacity:.55}
+.strip{display:flex;gap:8px;flex-wrap:wrap;padding:4px 2px}
+.strip button{flex:none;width:48px;height:62px;background:var(--panel);border:1px solid transparent;scroll-snap-align:start;opacity:.55}
 .strip button.on{opacity:1;border-color:var(--ink)}
 .strip svg{width:100%;height:100%}
 
@@ -105,7 +105,9 @@ input{font:inherit;font-size:16px;min-height:48px;padding:0 14px;border:1px soli
 .detail .hero .ph{width:min(88%,520px);height:auto}
 .vpane .ph{object-fit:contain}
 .zoom{width:100%;height:100%;overflow:hidden}.zoom img{width:100%;height:100%;object-fit:cover;transform:scale(2.4);transform-origin:50% 42%;mix-blend-mode:multiply}
+.pic,.acc aside .big{position:relative;overflow:hidden}.pic .ph,.acc aside .big .ph{position:absolute;inset:0}
 .post .pic .ph{object-fit:cover}
+@media(min-width:1180px){.board{grid-template-columns:repeat(4,minmax(0,1fr))}}
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:20px max(4vw,16px);border-top:1px solid var(--line);font-size:13px;color:var(--mute)}
 
 @media(max-width:860px){
